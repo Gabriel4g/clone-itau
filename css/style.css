@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.background-back-modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 6;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.background-back-modal > .modal-form-toggle {
+    height: 500px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: fixed;
+    border: 1px solid #000;
+    margin-top: 10rem;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EC7000;
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 5;
+}
+
+header #content-header {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #content-header .first-infos-header {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+header #content-header .first-infos-header ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header #content-header .first-infos-header ul > li {
+    font-size: 1.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+
+header #content-header .first-infos-header ul > li:hover::after {
+    content: "";
+    background: #fff;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 4.6rem;
+    display: block;
+}
+
+header #content-header .second-infos-header {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+header #content-header .second-infos-header 
+.content-login-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header #content-header .second-infos-header 
+.content-login-header .login-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    height: 5rem;
+    padding: 0 1.5rem;
+    border-radius: 5px;
+}
+
+header #content-header .second-infos-header 
+.content-login-header .login-header > input[type="number"] {
+    border: 0;
+    width: 7rem;
+    text-align: center;
+    font-size: 1.9rem;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+header #content-header .second-infos-header 
+.content-login-header button#btn-login-header {
+    border: 0;
+    width: 4.8rem;
+    height: 5rem;
+    background: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header #content-header .second-infos-header .acess-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+header #content-header .second-infos-header #btn-open-account-header {
+    width: 14rem;
+    height: 3.8rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background: none;
+    border: 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+header #content-header .second-infos-header #btn-open-account-header:hover {
+    background: #fff;
+    color: #EC7000;
+}
+
+main {
+    height: 600px;
+    width: 100%;
+    background-image: url(../assets/background-main-itaú.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 3rem;
+    transition: all 1s;
+}
+
+main #content-main {
+    width: 90%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+main #content-main span.reproduce-main {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+main #content-main span.reproduce-main:hover {
+    background: #63330f;
+    border-radius: 5rem;
+}
+
+main #content-main h2.title-main {
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+main #content-main p.text-main {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    line-height: 3rem;
+}
+
+main #content-main button.btn-main {
+    width: 11.7rem;
+    height: 3.8rem;
+    color: #fff;
+    background: #63330f;
+    border: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 4rem 0;
+    transition: all .2s ease-in;
+}
+
+main #content-main button.btn-main:hover {
+    background: #FFBD8A;
+    color: #000;
+}
+
+main #content-main .arrows-main {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 4rem;
+}
+
+main #content-main .arrows-main button.arrow {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+main #content-main .arrows-main button.arrow:hover {
+    background: #63330f;
+    border-radius: 50%;
+}
+
+section#section-questions-day {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+section#section-questions-day h2 {
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+section#section-questions-day #container-cards-questions-day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+section#section-questions-day #container-cards-questions-day > .card-questions-day {
+    height: 13.4rem;
+    width: 18.3rem;
+    color: #56504c;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 1.6rem;
+    cursor: pointer;
+}
+
+section#section-questions-day #container-cards-questions-day > .card-questions-day:hover {
+    border: 1px solid #EC7000;
+}
+
+section#section-questions-day #container-cards-questions-day > .card-questions-day
+.content-card-questions-day {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section#section-questions-day #container-cards-questions-day > .card-questions-day
+.content-card-questions-day h4.title-card-question {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: #231D19;
+}
+
+section#section-questions-day #container-cards-questions-day > .card-questions-day
+.content-card-questions-day p.text-card-question {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+section#section-contract-products {
+    width: 90%;
+    max-width: 1220px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+
+section#section-contract-products .content-contract h2.title-contract {
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section#section-contract-products .content-contract p.subtitle-contract {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+section#section-contract-products .card-combinaqui {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d6d0cc;
+    border-radius: 5px;
+    padding: 2.4rem;
+    position: relative;
+}
+
+section#section-contract-products .card-combinaqui .content-combinaqui {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#section-contract-products .card-combinaqui .content-combinaqui .icon-combinaqui {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section#section-contract-products .card-combinaqui .content-combinaqui 
+h3.title-card-combinaqui {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: #231D19; 
+}
+
+section#section-contract-products .card-combinaqui .content-combinaqui 
+p.text-card-combinaqui {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    color: #56504c;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+section#section-contract-products .card-combinaqui .content-combinaqui 
+button.button-card-combinaqui {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #231D19;
+    border: 1px solid;
+    background: none;
+    height: 3.2rem;
+    width: 12.8rem;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+section#section-contract-products .card-combinaqui .content-combinaqui 
+button.button-card-combinaqui:hover {
+    background: #DBDADA;
+}
+
+section#section-contract-products .container-two-cards-products {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d6d0cc;
+    position: relative;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product
+.content-card-product {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.4rem 1.4rem 2.4rem 2.4rem;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product
+.content-card-product .icon-card-product {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product
+.content-card-product h3.title-card-product {
+    font-size: 1.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product
+.content-card-product p.text-card-product {
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    color: #56504c;
+    line-height: 2.8rem;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product
+.content-card-product button.btn-card-product {
+    height: 3.2rem;
+    width: 12.8rem;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 2rem;
+    border: 1px solid #231D19;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+
+section#section-contract-products .container-two-cards-products > .card-product
+.content-card-product button.btn-card-product:hover {
+    background: #DBDADA;
+}
+
+section#section-credit-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 90%;
+    max-width: 1220px;
+    margin-bottom: 6rem;
+}
+
+section#section-credit-cards h2.title-section-credit-cards {
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+section#section-credit-cards #container-credit-cards {
+    display: flex;
+    gap: 2rem;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card {
+    height: 49.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #89837f;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card img {
+    height: 32rem;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card:nth-child(4) {
+    align-items: flex-start;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card:nth-child(4) img {
+    margin: 0 auto;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card
+.content-credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1.6rem;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card
+.content-credit-card h3.title-credit-card {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #231D19;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card
+.content-credit-card p.text-credit-card {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #56504c;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card
+.content-credit-card button.btn-credit-card {
+    height: 3.2rem;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #231D19;
+    border: 0;
+    border: 1px solid #231D19;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+
+section#section-credit-cards #container-credit-cards > .credit-card
+.content-credit-card button.btn-credit-card:hover {
+    background: #DBDADA;
+}
+
+section#section-xbox {
+    background: #E7E5E6;
+    position: relative;
+    margin-bottom: 10rem;
+    width: 90%;
+    max-width: 1220px;
+}
+
+section#section-xbox .subcard-xbox {
+    background: #ffffff99;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 2.4rem;
+    width: 56.7rem;
+    border-radius: 5px;
+}
+
+section#section-xbox .subcard-xbox .content-xbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#section-xbox .subcard-xbox .content-xbox .icon-xbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    color: #231D19;
+}
+
+section#section-xbox .subcard-xbox .content-xbox h3.title-content-xbox {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #231D19;
+}
+
+section#section-xbox .subcard-xbox .content-xbox p.text-content-xbox {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    color: #231D19;
+    line-height: 2.5rem;
+}
+
+section#section-xbox .subcard-xbox .content-xbox button.btn-xbox {
+    width: 12.8rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border: 1px solid #231D19;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #231D19;
+}
+
+section#section-xbox .subcard-xbox .content-xbox button.btn-xbox:hover {
+    background: #DBDADA;
+}
+
+section#section-investment-news {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1220px;
+    margin-bottom: 10rem;
+    align-items: center;
+}
+
+section#section-investment-news .content-texts-investment {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+section#section-investment-news .content-texts-investment p {
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+section#section-investment-news .content-texts-investment h2.title-section-investment {
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #EC7000;
+}
+
+section#section-investment-news #container-cards-investment {
+    display: flex;
+    gap: 1rem;
+}
+
+section#section-investment-news #container-cards-investment .card-investment-news {
+    height: 37.4rem;
+    width: 100%;
+    border: 1px solid #d6d0cc;
+    border-radius: 3px;
+}
+
+section#section-investment-news #container-cards-investment .card-investment-news
+.content-card-investment {
+    margin: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#section-investment-news #container-cards-investment .card-investment-news
+.content-card-investment h3.title-card-investment {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #231D19;
+    line-height: 3rem;
+}
+
+section#section-investment-news #container-cards-investment .card-investment-news
+.content-card-investment p.text-card-investment {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+    color: #231D19;
+}
+
+section#section-investment-news #container-cards-investment .card-investment-news
+.content-card-investment a {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #106EB0;
+    display: flex;
+}
+
+section#section-investment-news .btn-section-investment {
+    height: 4.8rem;
+    width: 35rem;
+    background: #EC7000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 4rem;
+}
+
+.toggle-modal {
+    display: flex;
+}
+
+.style-background-main {
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1235px) {
+    section#section-questions-day h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header #content-header .first-infos-header ul {
+        display: none;
+    }
+
+    header #content-header .second-infos-header .content-login-header {
+        display: none;
+    }
+
+    section#section-contract-products .card-combinaqui img {
+        width: 22.6rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        z-index: -1;
+    }
+
+    section#section-contract-products .container-two-cards-products > .card-product img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 10rem;
+        z-index: -1;
+    }
+
+    section#section-xbox {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    section#section-xbox .subcard-xbox {
+        position: inherit;
+        inset: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section#section-contract-products .container-two-cards-products {
+        flex-direction: column;
+    }
+
+    section#section-credit-cards #container-credit-cards {
+        flex-direction: column;
+    }
+
+    section#section-credit-cards #container-credit-cards 
+    .credit-card:nth-child(4) {
+        align-items: center;
+    }
+
+    section#section-credit-cards #container-credit-cards 
+    .credit-card:nth-child(4) .content-credit-card {
+        width: 95%;
+    }
+
+    section#section-credit-cards #container-credit-cards > .credit-card img {
+        margin: 0 auto;
+    }
+}

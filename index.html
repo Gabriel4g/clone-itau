@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaú</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-back-modal">
+        <div class="modal-form-toggle">
+        </div>
+    </div>
+
+    <header>
+        <div id="content-header">
+            <div class="first-infos-header">
+                <img src="./assets/logo-itaú.png" alt="Logo">
+
+                <ul id="links-header">
+                    <li class="link">para você</li>
+                    <li class="link">para empresas</li>
+                    <li class="link">ajuda</li>
+                    <li class="link">busca</li>
+                </ul>
+            </div>
+
+            <div class="second-infos-header">
+                <div class="content-login-header">
+                    <div class="login-header">
+                        <input type="number" id="input-agencia" placeholder="agência">
+                        <input type="number" id="input-conta" placeholder="conta">
+                    </div>
+
+                    <button id="btn-login-header">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-arrow-up-left-circle" width="28" height="28"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="12" cy="12" r="9" />
+                            <line x1="9" y1="9" x2="15" y2="15" />
+                            <polyline points="15 9 9 9 9 15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="acess-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                        <path d="M20 12h-13l3 -3m0 6l-3 -3" />
+                    </svg>
+
+                    acessos
+                </div>
+
+                <button id="btn-open-account-header">
+                    abra sua conta
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-container">
+        <div id="content-main">
+            <span class="reproduce-main">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-right" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+                </svg>
+                reproduzir
+            </span>
+
+            <h2 class="title-main">O cartão de crédito ideal</h2>
+            <p class="text-main">
+                São mais de 70 cartões para escolher o que <br> dá match com você
+            </p>
+
+            <button class="btn-main">peça já o seu</button>
+
+            <div class="arrows-main">
+                <button class="arrow-left arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="15 6 9 12 15 18" />
+                    </svg>
+                </button>
+
+                <button class="arrow-right arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
+                        width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <section id="section-questions-day">
+        <h2>resolva as questões do dia a dia</h2>
+
+        <div id="container-cards-questions-day">
+            <div class="card-questions-day">
+                <div class="content-card-questions-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-qrcode" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="6" height="6" rx="1" />
+                        <line x1="7" y1="17" x2="7" y2="17.01" />
+                        <rect x="14" y="4" width="6" height="6" rx="1" />
+                        <line x1="7" y1="7" x2="7" y2="7.01" />
+                        <rect x="4" y="14" width="6" height="6" rx="1" />
+                        <line x1="17" y1="7" x2="17" y2="7.01" />
+                        <line x1="14" y1="14" x2="17" y2="14" />
+                        <line x1="20" y1="14" x2="20" y2="14.01" />
+                        <line x1="14" y1="14" x2="14" y2="17" />
+                        <line x1="14" y1="20" x2="17" y2="20" />
+                        <line x1="17" y1="17" x2="20" y2="17" />
+                        <line x1="20" y1="17" x2="20" y2="20" />
+                    </svg>
+
+                    <h4 class="title-card-question">boleto</h4>
+                    <p class="text-card-question">
+                        emita 2 via de boletos itaú
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-questions-day">
+                <div class="content-card-questions-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="3" y="5" width="18" height="14" rx="3" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                        <line x1="7" y1="15" x2="7.01" y2="15" />
+                        <line x1="11" y1="15" x2="13" y2="15" />
+                    </svg>
+
+                    <h4 class="title-card-question">desbloqueio de cartão</h4>
+                    <p class="text-card-question">
+                        veja como fazer
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-questions-day">
+                <div class="content-card-questions-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile"
+                        width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="7" y="4" width="10" height="16" rx="1" />
+                        <line x1="11" y1="5" x2="13" y2="5" />
+                        <line x1="12" y1="17" x2="12" y2="17.01" />
+                    </svg>
+
+                    <h4 class="title-card-question">aplicativos</h4>
+                    <p class="text-card-question">
+                        baixe os apps do banco itaú
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-questions-day">
+                <div class="content-card-questions-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
+                        <line x1="8" y1="8" x2="12" y2="8" />
+                        <line x1="8" y1="12" x2="12" y2="12" />
+                        <line x1="8" y1="16" x2="12" y2="16" />
+                    </svg>
+
+                    <h4 class="title-card-question">fatura digital</h4>
+                    <p class="text-card-question">
+                        receba a fatura do seu cartão
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-questions-day">
+                <div class="content-card-questions-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-export" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M11.5 21h-4.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v5m-5 6h7m-3 -3l3 3l-3 3" />
+                    </svg>
+
+                    <h4 class="title-card-question">comprovantes</h4>
+                    <p class="text-card-question">
+                        gere uma 2 via do comprovante
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-questions-day">
+                <div class="content-card-questions-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-question"
+                        width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="10" cy="10" r="7" />
+                        <path d="M21 21l-6 -6" />
+                        <line x1="10" y1="13" x2="10" y2="13.01" />
+                        <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
+                    </svg>
+
+                    <h4 class="title-card-question">atendimento</h4>
+                    <p class="text-card-question">
+                        conheça nossos canais de ajuda
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-contract-products">
+        <div class="content-contract">
+            <h2 class="title-contract">contrate nossos produtos on-line</h2>
+            <p class="subtitle-contract">Confira as soluções que o banco Itaú oferece para você.</p>
+        </div>
+
+        <div class="card-combinaqui">
+            <div class="content-combinaqui">
+                <div class="icon-combinaqui">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="3" y="5" width="18" height="14" rx="3" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                        <line x1="7" y1="15" x2="7.01" y2="15" />
+                        <line x1="11" y1="15" x2="13" y2="15" />
+                    </svg>
+
+                    combinaqui
+                </div>
+
+                <h3 class="title-card-combinaqui">O combinado não sai caro!</h3>
+                <p class="text-card-combinaqui">
+                    Um montão de benefícios, em uma única assinatura mensal, com até 87% de economia.
+                </p>
+
+                <button class="button-card-combinaqui">
+                    venha conhecer
+                </button>
+            </div>
+
+            <img src="./assets/combinaqui-itaú.avif" alt="Image Combinaqui">
+        </div>
+
+        <div class="container-two-cards-products">
+            <div class="card-product">
+                <div class="content-card-product">
+                    <div class="icon-card-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="28"
+                            height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                            <path d="M12 6v2m0 8v2" />
+                        </svg>
+                        empréstimo
+                    </div>
+
+                    <h3 class="title-card-product">Consignado Itaú</h3>
+                    <p class="text-card-product">
+                        Use o dinheiro como quiser e com mais tempo para pagar
+                    </p>
+
+                    <button class="btn-card-product">
+                        confira aqui
+                    </button>
+                </div>
+
+                <img src="./assets/people-card1-product.avif" alt="Peoples">
+            </div>
+
+            <div class="card-product">
+                <div class="content-card-product">
+                    <div class="icon-card-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-storm"
+                            width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
+                            <polyline points="13 14 11 18 14 18 12 22" />
+                        </svg>
+                        investimentos
+                    </div>
+
+                    <h3 class="title-card-product">
+                        Investimentos a partir de R$1,00
+                    </h3>
+                    <p class="text-card-product">
+                        Prateleira de produtos de vários gestores do mercado com a segurança e solidez que o Itaú tem.
+                    </p>
+
+                    <button class="btn-card-product">
+                        confira
+                    </button>
+                </div>
+
+                <img src="./assets/ion-itaú.webp" alt="ION Itaú">
+            </div>
+        </div>
+
+        <div class="container-two-cards-products">
+            <div class="card-product">
+                <div class="content-card-product">
+                    <div class="icon-card-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote"
+                            width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="12" cy="12" r="3" />
+                            <rect x="3" y="6" width="18" height="12" rx="2" />
+                            <line x1="18" y1="12" x2="18.01" y2="12" />
+                            <line x1="6" y1="12" x2="6.01" y2="12" />
+                        </svg>
+                        renegociação
+                    </div>
+
+                    <h3 class="title-card-product">
+                        Negocie suas contas em atraso
+                    </h3>
+                    <p class="text-card-product">
+                        Aqui você encontra condições especiais, conseguindo renegociar de forma unificada e on-line.
+                    </p>
+
+                    <button class="btn-card-product">
+                        confira aqui
+                    </button>
+                </div>
+
+                <img src="./assets/people-card3-product.webp" alt="People">
+            </div>
+
+            <div class="card-product">
+                <div class="content-card-product">
+                    <div class="icon-card-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-car" width="28"
+                            height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="7" cy="17" r="2" />
+                            <circle cx="17" cy="17" r="2" />
+                            <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+                        </svg>
+                        consórcio
+                    </div>
+
+                    <h3 class="title-card-product">
+                        Consórcio parcelado não sai caro
+                    </h3>
+                    <p class="text-card-product">
+                        Planeje seu imóvel, moto, carro ou veículo pesado sem entrada e sem juros. Consulte as
+                        condições.
+                    </p>
+
+                    <button class="btn-card-product">
+                        simule
+                    </button>
+                </div>
+
+                <img src="./assets/carro-consórcio.webp" alt="Car">
+            </div>
+        </div>
+    </section>
+
+    <section id="section-credit-cards">
+        <h2 class="title-section-credit-cards">confira nossos cartões de crédito mais pedidos da semana</h2>
+
+        <div id="container-credit-cards">
+            <div class="credit-card">
+                <img src="./assets/cartao-platinium.webp" alt="Cartão Platinium">
+
+                <div class="content-credit-card">
+                    <h3 class="title-credit-card">Cartão Click Platinum</h3>
+                    <p class="text-credit-card">
+                        Anuidade grátis pra sempre e limite de até R$10 mil
+                    </p>
+                    <button class="btn-credit-card">
+                        peça já o seu
+                    </button>
+                </div>
+            </div>
+
+            <div class="credit-card second-card">
+                <img src="./assets/cartao-pao-de-açucar.webp" alt="Cartão Pão de Açucar">
+
+                <div class="content-credit-card">
+                    <h3 class="title-credit-card">Cartão Pão de Açúcar</h3>
+                    <p class="text-credit-card">
+                        20% OFF em queijos, vinhos e cervejas especiais
+                    </p>
+                    <button class="btn-credit-card">
+                        peça já o seu
+                    </button>
+                </div>
+            </div>
+
+            <div class="credit-card">
+                <img src="./assets/cartao-magalu.webp" alt="Cartão Magalu">
+
+                <div class="content-credit-card">
+                    <h3 class="title-credit-card">Cartão Magalu</h3>
+                    <p class="text-credit-card">
+                        Anuidade grátis e 2% de cashback no site da Magalu.
+                    </p>
+                    <button class="btn-credit-card">
+                        peça já o seu
+                    </button>
+                </div>
+            </div>
+
+            <div class="credit-card">
+                <img src="./assets/cartoes-itaú.webp" alt="Cartões Itaú">
+
+                <div class="content-credit-card">
+                    <h3 class="title-credit-card">Cartões Itaú</h3>
+                    <p class="text-credit-card">
+                        Anuidade grátis e 2% de cashback no site da Magalu.
+                    </p>
+                    <button class="btn-credit-card">
+                        escolha o seu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-xbox">
+        <img src="./assets/xbox-itau.avif" alt="Xbox">
+
+        <div class="subcard-xbox">
+            <div class="content-xbox">
+                <div class="icon-xbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                      Entre no jogo com Xbox
+                </div>
+
+                <h3 class="title-content-xbox">Chegou o Xbox All Acess no itaú</h3>
+                <p class="text-content-xbox">Compre o Xbox Series S + Game Pass Ultimate em 21x sem juros e com frete grátis.</p>
+                <button class="btn-xbox">peça já o seu</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-investment-news">
+        <div class="content-texts-investment">
+            <p>Inteligência Financeira</p>
+            <h2 class="title-section-investment">as últimas notícias sobre investimentos</h2>
+        </div>
+
+        <div id="container-cards-investment">
+            <div class="card-investment-news">
+                <img src="./assets/image-investment-card1.jpg" alt="Investimentos begginers">
+
+                <div class="content-card-investment">
+                    <h3 class="title-card-investment">
+                        Investimentos para Iniciantes
+                    </h3>
+                    <p class="text-card-investment">
+                        Guia completo com os primeiros passos para investir.
+                    </p>
+                    <a href="#" class="link-card-investment" style="margin-top: 3.4rem;">
+                        ver a matéria completa
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="9 6 15 12 9 18" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-investment-news">
+                <img src="./assets/image-profile-investment.jpg" alt="Profile Investment">
+
+                <div class="content-card-investment">
+                    <h3 class="title-card-investment">
+                        Veja qual o seu perfil de investidor
+                    </h3>
+                    <p class="text-card-investment">
+                        Entenda qual o seu perfil e por que ele é importante para definir sua carteira.
+                    </p>
+                    <a href="#" class="link-card-investment" style="margin-top: 1rem;">
+                        ver a matéria completa
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="9 6 15 12 9 18" />
+                          </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-investment-news">
+                <img src="./assets/image-specialist-investment.jpg" alt="Dica Investimento">
+
+                <div class="content-card-investment">
+                    <h3 class="title-card-investment">
+                        Dica do especialista IF
+                    </h3>
+                    <p class="text-card-investment">
+                        Investir vai (muito) além do rendimento.
+                    </p>
+                    <a href="#" class="link-card-investment" style="margin-top: 6rem;">
+                        ver a matéria completa
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="9 6 15 12 9 18" />
+                          </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-investment-news">
+                <img src="./assets/image-investment-travel.jpg" alt="Investir para viajar">
+
+                <div class="content-card-investment">
+                    <h3 class="title-card-investment">
+                        Investir para viajar
+                    </h3>
+                    <p class="text-card-investment">
+                        Como organizar suas finanças para realizar suas viagens?
+                    </p>
+                    <a href="#" class="link-card-investment" style="margin-top: 6rem;">
+                        ver a matéria completa
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="9 6 15 12 9 18" />
+                          </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-section-investment">
+            acesse o site
+        </button>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
